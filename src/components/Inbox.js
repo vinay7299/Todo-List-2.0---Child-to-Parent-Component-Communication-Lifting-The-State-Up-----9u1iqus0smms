@@ -42,7 +42,7 @@ const Inbox = (props) => {
             <input
               type="date"
               ref={taskDate}
-              defaultValue="2023-06-05"
+              defaultValue="2022-09-27"
               id="date"
             ></input>
           </div>
