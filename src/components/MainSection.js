@@ -10,14 +10,21 @@ const list = [
 ];
 
 const MainSection = (props) => {
+
+    const [tasks, setTasks] = useState(list);
+
+    const append = (newTask) => {
+        setTasks(tasks.concat(newTask));
+        console.log(tasks);
+    }
   
   return (
     <div className="main-section">
       {props.active === "INBOX" && (
-        <Inbox list={} append={} />
+        <Inbox list={tasks} append={append} />
       )}
-      {props.active === "TODAY" && <Today list={} />}
-      {props.active === "NEXT" && <Next7Days list={} />}
+      {props.active === "TODAY" && <Today list={tasks} />}
+      {props.active === "NEXT" && <Next7Days list={tasks} />}
     </div>
   );
 };

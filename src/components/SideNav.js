@@ -4,8 +4,6 @@ import "../styles/App.css";
 
 const SideNav = (props) => {
 
-
-
   return (
     <ul className="side-nav">
       <li onClick= {() => {props.change('INBOX')}}>

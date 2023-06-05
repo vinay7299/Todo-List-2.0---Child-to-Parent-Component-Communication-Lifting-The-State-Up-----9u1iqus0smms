@@ -1,6 +1,7 @@
 import React from "react";
 
 const ListRender = (props) => {
+  console.log(props.list)
   return (
     <>
       {props.list.map((list) => {
