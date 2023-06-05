@@ -4,7 +4,7 @@ import ListRender from "./ListRender";
 const Today = (props) => {
   console.log(props.list)
 
-  const today = new Date();
+  const today = new Date("9/27/2022");
   
   return (
     <div id="today-list">
