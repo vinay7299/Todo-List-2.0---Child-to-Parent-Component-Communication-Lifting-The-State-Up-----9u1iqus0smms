@@ -3,7 +3,7 @@ import ListRender from "./ListRender";
 
 const Next7Days = (props) => {
 
-  const today = new Date();
+  const today = new Date("2022-09-28");
 
   const withinWeek = (date) => {
     const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
