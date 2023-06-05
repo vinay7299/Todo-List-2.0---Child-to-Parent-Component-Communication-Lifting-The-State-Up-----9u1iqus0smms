@@ -3,12 +3,12 @@ import ListRender from "./ListRender";
 
 const Next7Days = (props) => {
 
-  const today = new Date();
+  const today = new Date("9/28/2022")
 
   const withinWeek = (date) => {
     const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
     console.log(nextWeek)
-    if(nextWeek > date){
+    if(nextWeek >= date){
         return true;
     }
     return false;
